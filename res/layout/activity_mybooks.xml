@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <RelativeLayout 
+	        android:id="@+id/mybooks_top"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/shuyou_top_bg">
+	        <TextView 
+	            style="@style/titleText"
+	            android:text="@string/my_books"
+	            android:layout_centerInParent="true"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"/>
+	        <ImageView 
+	            android:id="@+id/mybooks_upload"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="10dp"
+	            android:src="@drawable/shuyou_top_btn"
+	            android:contentDescription="@string/upload"/>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="28dp"
+	            android:textSize="17sp"
+	            android:textStyle="bold"
+	            android:text="扫码"/>
+	        <ImageView 
+	            android:id="@+id/mybooks_back"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="10dp"
+	            android:src="@drawable/shuyou_top_btn"
+	            android:contentDescription="@string/back"/>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="28dp"
+	            android:textSize="17sp"
+	            android:textStyle="bold"
+	            android:text="@string/back"/>
+	     </RelativeLayout>
+	     
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_below="@id/main_top"
+            android:layout_width="wrap_content"
+            android:background="@drawable/shuyou_tab_bg"
+            android:tabStripEnabled="false"
+            android:layout_height="0dip" >
+        </TabWidget>
+
+        <LinearLayout
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="60dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/shuyou_tab_bg" >
+	        <TextView
+	            style="@style/tab_text"
+	            android:id="@+id/mybooks_tab_text1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1.0"
+	            android:gravity="center"
+	            android:text="已传书籍"/>
+	        <TextView
+	            style="@style/tab_text"
+	            android:id="@+id/mybooks_tab_text2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1.0"
+	            android:gravity="center"
+	            android:text="借入书籍"/>
+	        <TextView
+	            style="@style/tab_text"
+	            android:id="@+id/mybooks_tab_text3"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1.0"
+	            android:gravity="center"
+	            android:text="借出书籍"/>
+    	</LinearLayout>
+   
+    <ImageView
+        android:id="@+id/mybooks_cursor"
+        android:layout_below="@id/mybooks_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/shuyou_tab_selected" />
+    
+     <android.support.v4.view.ViewPager
+        android:id="@+id/mybooks_vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="105dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </FrameLayout>
+    
+    </RelativeLayout>
+</TabHost>

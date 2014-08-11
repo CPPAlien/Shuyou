@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShuYou</string>
+    <string name="version_name">1.1</string>
+    <string name="menu_settings">Settings</string>
+    <string name="shuyou_logo">书友图标</string>
+    <string name="renren_logo_des">人人logo</string>
+    <string name="login_renren">人人帐号登录</string>
+    <string name="sina_logo_des">新浪logo</string>
+    <string name="login_sina">新浪微博登录</string>
+    <string name="douban_logo_des">豆瓣logo</string>
+    <string name="login_douban">豆瓣帐号登录</string>
+    <string name="QQ_logo_des">QQlogo</string>
+    <string name="login_QQ">QQ号登录</string>
+    <string name="user_info">个人资料</string>
+    <string name="register">注册</string>
+    <string name="array_pic">箭头图标</string>
+    <string name="bookshelf">书架</string>
+    <string name="usr_logo">头像</string>
+    <string name="nick_name">昵称</string>
+    <string name="sex">性别</string>
+    <string name="age">地点</string>
+    <string name="phone_num">手机号</string>
+    <string name="qq">QQ</string>
+    <string name="wechat">微信</string>
+    <string name="notice">注意</string>
+    <string name="userinfo_notice">三种联系方式，请至少留下一种，
+        						   您所留下的联系方式是为了书友们
+        						   能够及时有效的和您取得联系。这
+        						   部分信息不会公开显示。</string>
+    <string name="nickname_setting">昵称设置</string>
+    <string name="sex_setting">性别设置</string>
+    <string name="age_setting">年龄设置</string>
+    <string name="qq_setting">QQ设置</string>
+    <string name="phonenum_setting">手机号设置</string>
+    <string name="wechat_setting">微信设置</string>
+    <string name="confirm">确 定</string>
+    <string name="back">返回</string>
+    <string name="upload">上传</string>
+    <string name="my_books">我的书架</string>
+    <string name="book_detail">书籍详情</string>
+    <string name="loading">正在加载…</string>
+    <string name="search">搜索</string>
+    <string name="config">设置</string>
+    <string name="about">关于</string>
+    <string name="div_line">分割线</string>
+    
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    
+</resources>

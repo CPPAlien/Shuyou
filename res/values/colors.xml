@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="userinfo_bg">#FEF0BE</color>
+    <color name="userinfo_div_line">#CDBB79</color>
+    <color name="userinfo_pressed">#FABB24</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#EA5807</color>
+    <color name="grey">#727070</color>
+    <color name="label_np">#E6D598</color>
+    <color name="label_p">#C9B25C</color>
+    <color name="content_black_bg">#80000000</color>
+    <color name="light_grey">#55727070</color>
+    
+    <color name="top_tip_selected_bg">#FABB24</color>
+    <color name="top_title_radiobg_normal">#F7F7F7</color>
+    <color name="dialog_text">#b49e4c</color>
+    
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="slide_pager_div">0.67dip</dimen>
+    <dimen name="slide_pager_div_height">25dip</dimen>
+    <dimen name="top_layout_padingright">35dp</dimen>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFEFEFEF" >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="38dip"
+        android:background="#DBDBDB"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/horizontalScrollView_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:fadingEdge="none"
+                android:scrollbars="none" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="50dp"
+                        android:layout_height="3dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#fab24f" />
+
+                    <LinearLayout
+                        android:id="@+id/top_title_father_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_above="@id/img1"
+                        android:background="#F7F7F7"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="34.5dp"
+                android:layout_toRightOf="@id/horizontalScrollView"
+                android:background="#F7F7F7" />
+
+            <ImageView
+                android:id="@+id/top_pager_point_left_img_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="3dip"
+                android:src="@drawable/web_gesture_left"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/top_pager_point_right_img_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="3dip"
+                android:src="@drawable/web_gesture_right"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!-- 更多分类 -->
+
+        <RelativeLayout
+            android:id="@+id/top_more_layout"
+            android:layout_toLeftOf="@id/horizontalScrollView_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/slide_more_div" -->
+            <!-- android:layout_width="0.67dip" -->
+            <!-- android:layout_height="25dip" -->
+            <!-- android:paddingBottom="5dip" -->
+            <!-- android:paddingTop="5dip" -->
+            <!-- android:src="#dbdbdb" /> -->
+
+            <!-- <ImageView
+                android:id="@+id/more_img_btn"
+                android:layout_width="43dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/home_top_more_btn_selector"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/slide_more_line"
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:layout_alignLeft="@+id/more_img_btn"
+                android:layout_alignParentBottom="true"
+                android:background="#0A5CAD"
+                android:visibility="gone" /> -->
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.shuyou.widget.MyViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_layout" >
+    </com.shuyou.widget.MyViewPager>
+
+</RelativeLayout>

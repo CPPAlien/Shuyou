@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+	<TabHost 
+	    android:id="@android:id/tabhost"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+	        <RelativeLayout 
+		        android:id="@+id/main_top"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:background="@drawable/shuyou_top_bg">
+		        <TextView 
+		            style="@style/titleText"
+		            android:text="书架"
+		            android:layout_centerInParent="true"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"/>
+		        <ImageView 
+		            android:id="@+id/main_search"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="10dp"
+		            android:src="@drawable/shuyou_top_btn"
+		            android:contentDescription="@string/bookshelf"/>
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="28dp"
+		            android:textSize="17sp"
+		            android:textStyle="bold"
+		            android:text="搜索"/>
+		        <ImageView 
+		            android:id="@+id/main_userinfo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="10dp"
+		            android:src="@drawable/shuyou_top_btn"
+		            android:contentDescription="@string/bookshelf"/>
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="28dp"
+		            android:textSize="17sp"
+		            android:textStyle="bold"
+		            android:text="个人"/>
+		     </RelativeLayout>
+		     
+	        <TabWidget
+	            android:id="@android:id/tabs"
+	            android:layout_below="@id/main_top"
+	            android:layout_width="wrap_content"
+	            android:background="@drawable/shuyou_tab_bg"
+	            android:tabStripEnabled="false"
+	            android:layout_height="0dip" >
+	        </TabWidget>
+	
+	        <LinearLayout
+		        android:layout_alignParentTop="true"
+		        android:layout_marginTop="60dp"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/shuyou_tab_bg" >
+		        <TextView
+		            style="@style/tab_text"
+		            android:id="@+id/main_tab_text1"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:text="最新推荐"/>
+		
+		        <TextView
+		            style="@style/tab_text"
+		            android:id="@+id/main_tab_text2"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:text="最热推荐"/>
+	    	</LinearLayout>
+	   
+	    <ImageView
+	        android:id="@+id/main_cursor"
+	        android:layout_below="@id/main_top"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:scaleType="matrix"
+	        android:src="@drawable/shuyou_tab_selected" />
+	    
+	     <android.support.v4.view.ViewPager
+	        android:id="@+id/main_vPager"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="105dp"
+	        android:layout_gravity="center"
+	        android:background="@color/white"
+	        android:flipInterval="30"
+	        android:persistentDrawingCache="animation" />
+	
+	        <FrameLayout
+	            android:id="@android:id/tabcontent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:visibility="gone" >
+	        </FrameLayout>
+	    
+	    </RelativeLayout>
+	    <ImageView
+	        android:id="@+id/main_saoma_tool"
+	        android:src="@drawable/shuyou_saoma_tool"
+	        android:layout_gravity="right|bottom"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:scaleType="matrix"/>
+	</TabHost>
+	<include 
+	        layout="@layout/activity_slidemenu"/>
+	<ImageView 
+	    android:id="@+id/main_guide"
+	    android:visibility="gone"
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:background="@drawable/shuyou_guide_main"/>
+</RelativeLayout>
